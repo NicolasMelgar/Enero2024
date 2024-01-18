@@ -8,7 +8,9 @@
 
 .capa{
     width: 100%;
-    height: 100vh;
+    /* Le puse heigth auto y perdí el gris de fondo
+    pero mejor eso a ver el gris cortado */
+    height: auto;
     position: absolute;
     background: #38273b;
     opacity: .5;
