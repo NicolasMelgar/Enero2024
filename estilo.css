@@ -301,6 +301,7 @@ nav .icon .line{
 
     .parrafo{
         font-size: 1.3rem;
+        height: auto;
     }
 }
 
@@ -308,7 +309,6 @@ nav .icon .line{
 
 
 @media screen and (max-width: 425px) {
-
 
     nav .links a{
         font-size: 1.2rem;
