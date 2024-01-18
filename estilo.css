@@ -304,3 +304,65 @@ nav .icon .line{
     }
 }
 
+/* Max 425 */
+
+
+@media screen and (max-width: 425px) {
+
+
+    nav .links a{
+        font-size: 1.2rem;
+    }
+
+    nav .links a:hover{
+        font-size: 1.5rem;
+    }
+
+#img_fondo_personal{
+    /* width: 100%; */
+    height: auto;
+    margin: auto;
+    max-width: 70vw;
+    /* Este máximo me sirve si quiero escribir mas y dejar la foto más chica */
+    max-height: 60vh;
+    /* padding: 5rem 1rem; */
+}
+
+.parrafo .img_fondo_redonda{
+    border-radius: 50%;
+    padding: 20px;
+    padding-top: 0px;
+    float: left;
+} 
+.parrafo{
+    width: 90vw;
+    height: auto;
+    margin: auto;
+    margin-top: 5rem;
+    padding: 20px;
+    font-size: 1.1rem;
+    line-height: 1.3;
+}
+
+.inicio_frase{
+    display: flex;
+    justify-content: center;
+    color: #0a4b79;
+    font-weight: bolder;
+}
+
+.parrafo ul li{
+    margin-left: 15px;
+}
+
+.parrafo ul li .chico{
+    font-size: .7rem;
+}
+#img_fondo{
+    width: 80vw;
+    height: auto;
+    border-radius: 55px;
+    margin-right: 15px;
+}
+}
+
