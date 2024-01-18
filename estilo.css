@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*Ver si pongo box-sizing: border-box;*/
+}
+
+
+.capa{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: #38273b;
+    opacity: .5;
+    z-index: -1;
+    margin-top: -50px;
+}
+
+#img_fondo_personal{
+    /* width: 100%; */
+    height: auto;
+    margin: auto;
+    max-width: 40vw;
+    /* Este máximo me sirve si quiero escribir mas y dejar la foto más chica */
+    max-height: 60vh;
+    /* padding: 5rem 1rem; */
+}
+
+.parrafo .img_fondo_redonda{
+    border-radius: 50%;
+    padding: 20px;
+    padding-top: 0px;
+    float: left;
+} 
+.parrafo{
+    width: 80vw;
+    height: 80vh;
+    margin: auto;
+    margin-top: 7rem;
+    padding: 20px;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    background: #fff;
+    box-shadow: 5px 5px 25px 5px black;
+    border-radius: 20px;
+}
+
+.parrafo p span{
+    color: #0a4b79;
+    font-weight: bolder;
+}
+
+.frase{
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+.inicio_frase{
+    display: flex;
+    justify-content: center;
+    color: #0a4b79;
+    font-weight: bolder;
+}
+
+.parrafo ul li{
+    margin-left: 15px;
+}
+
+.parrafo ul li .chico{
+    font-size: 1rem;
+}
+#img_fondo{
+    width: 40vw;
+    height: auto;
+    border-radius: 55px;
+    margin-right: 15px;
+}
+/*------BARRA DE NAVEGACIÓN------*/
+
+/*Si modifico este heigth debo modificar como se ve la barra el pantalla de celular*/
+nav{
+    position: fixed;
+    z-index: 10;
+    left:0;
+    right: 0;
+    top: 0;
+    padding: 0 20px;
+    height: 12vh;/*Esta es una de las tres alturas que suma 100vh en total*/
+    background: #1e5799; /* Old browsers */
+    background: -moz-linear-gradient(top, #1e5799 0%, #2989d8 37%, #207cca 57%, #7db9e8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #1e5799 0%,#2989d8 37%,#207cca 57%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #1e5799 0%,#2989d8 37%,#207cca 57%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+}
+
+/*esto está repetido para probar con color negro sin perder el gradient anterior, después decido*/
+nav{
+    background: black; /* Old browsers */
+    background: -moz-linear-gradient(top,black, #7db9e8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, black,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, black 0%,black 47%, rgb(30, 9, 8) 87%, rgb(33, 1, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    
+}
+nav .logo{
+    float: left;
+    width: 4vw;/*Esto logra que no se deforme el logo*/
+    height: 8vh;
+    line-height: 30px;
+    display: flex;
+    margin-top: 3px;
+    border-radius: 50%;
+}
+
+nav .links {
+    float: right;
+    padding: 0;
+    margin: 0;
+    /*Con este ancho arreglo el problema de la superposición en sobre mi*/
+    width: 80vw;
+    height: 10vh;
+    /*Esta parte me sirve para ubicar los li*/
+    display: flex;
+    justify-content:stretch;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .links li{
+    list-style: none;
+    justify-content: center;
+}
+
+nav .links a{
+    display: block;
+    padding: .7em;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    user-select: none;/*esto imposibilita que se pueda seleccionar los enlaces como para copiarlos*/
+    transition: all .8s;/*(A)esta es igual al hover, pero ahora lo hace para "volver"*/
+}
+
+nav .links a:hover{
+    color: #0a4b79;
+    background-color: #fff;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    /* Alan dijo que esto solo en el elemento . SACARLO. transition: all .5s; esta es la misma que está arriba en (A)*/
+}
+
+
+/*------Inhabilito el link a la propia page en cada page------*/
+
+#bloqueoLucia{
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+#bloqueoMatias{
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+#bloqueoSantiago{
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+#bloqueoCarla{
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+#bloqueoLoreley{
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+#bloqueoJose{
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+#bloqueoGabriel{
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+#bloqueoRosario{
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+#bloqueoCesar{
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+#bloqueoMariela{
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+
+/*------Esto es el icono de despliegue en celular (Mi Hamburguesa con CSS)------*/
+#nav-toggle{
+    position: absolute;
+    top: -100px;
+}
+
+nav .icon{
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav .icon .line{
+    width: 30px;
+    height: 5px;
+    background-color: #0d4672;
+    margin: 5px;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+    /*Esto le pone una sombra que si no la saco se mueve con las lineas al formar la X*/
+    box-shadow: 10px 10px #566a78;
+}
+
+
+@media screen and (max-width: 980px) {
+    nav .logo{
+        float: none;
+        width: auto;/*Misma solución que pantalla completa, queda fijo pero me gusta más que los movimientos que hace con % o px*/
+        justify-content: start;
+    }
+
+    .icon:hover{
+        cursor: pointer;
+    }
+
+    nav .links{
+        
+        float: none;
+        position: fixed;
+        z-index: 9;/*yo no sé si esto está realmente funcionando*/
+        /*Esto es la pantalla traslucida que aparece, me gusta entera así*/
+        /*Igual le voy a dejar esos márgenes porque quizás sea bueno que se note que es distinta a la pantalla trasera*/
+        left: 50px;/*Si lo pongo en 0 ocupa todo el ancho de la ventana*/
+        right: 50px;/*Si lo pongo en 0 ocupa todo el ancho de la ventana*/
+        top: 70px;/*Este separa la ventana emergente del nav...así me gusta*/
+        bottom: 100%;/*Ojo que esto es lo que hace desaparecer la pantalla al cerrarla*/
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: rgba(0,0,0,.7);
+        overflow: hidden;
+        transition: all 2s ease-in-out;/*dos segundos para que aparezca la pantalla...parece una eternidad jajaja*/
+    }
+
+    nav .links a{
+        font-size: 1.5rem;
+    }
+
+    nav .links a:hover{
+        font-size: 1.8rem;
+    }
+
+    nav .icon{
+        display: block;
+    }
+
+    nav :checked ~ .links{
+        bottom: 0;
+    }
+
+    /*esto es lo que mueve las barras y forma una cruz*/
+    /*Si agrego la línea 2 se hace como una estrella*/
+    nav :checked ~ .icon .line:nth-child(1){
+        transform: translateY(10px) rotate(225deg);
+    }
+    nav :checked ~ .icon .line:nth-child(3){
+        transform: translateY(-10px) rotate(-225deg);
+    }
+    /*Me parece interesante dejarlo porque es diferente a todas las cruces*/
+    nav :checked ~ .icon .line:nth-child(2){
+        opacity: 0.5;
+        width: 18px;
+        transform: translateX(6px);
+    }
+
+    /*Esto saca la sombra de las lineas del sector nav .icon .line*/
+    nav :checked ~ .icon .line{
+        box-shadow: none; /*si quiero ver las líneas darle un color acá y listo*/
+    }
+
+    .parrafo{
+        font-size: 1.3rem;
+    }
+}
+
