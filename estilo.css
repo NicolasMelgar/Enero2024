@@ -318,6 +318,9 @@ nav .icon .line{
         font-size: 1.5rem;
     }
 
+    nav .links{
+        top: 90px;
+    }
 #img_fondo_personal{
     /* width: 100%; */
     height: auto;
